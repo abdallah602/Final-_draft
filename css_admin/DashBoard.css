@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: rgb(1, 235, 248);
+  --secondary: #fe3f40;
+  --light: #ffffff;
+  --dark: #161313;
+  --dark-color: hsl(212, 42%, 15%);
+  --bac-color: #020113;
+  --title: 3.6rem;
+  --Side_title: 2.4rem;
+  --title-product: 1.7rem;
+  --text-product: 1.1rem;
+  --textP: 1.6rem;
+  --logo-header: 4rem;
+  --link_header: 1.8rem;
+  --body-color: #ffffff;
+}
+body {
+  background: rgb(226, 226, 226);
+}
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0 t;
+  width: 90px;
+  /* width: 280px; */
+  background: #fff;
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover {
+  width: 280px;
+  transition: 1s;
+}
+.logo {
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+.logo .fas{
+  font-size: 1.5rem;
+  margin-left: -5px;
+}
+.logo span {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+nav a {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 15px;
+}
+nav a:hover {
+  background: #eee;
+}
+nav a:hover i {
+  color: #34af6d;
+  transition: 0.5s;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  display: flex;
+}
+
+/* MAin Section */
+.main {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top {
+  display: flex;
+  width: 100%;
+}
+.main-top i {
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main .users {
+  display: flex;
+  width: 100%;
+}
+.users .card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(126deg, #ffffff, #e3e3e3, #ffffff);
+  width: 25%;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.users .card i {
+  font-size: 3rem;
+  color: var(--secondary);
+}
+.users .card h2 {
+  font-size: 1.5rem;
+  color: #020113da;
+}
+.users .card h4 {
+  font-size: 1.4rem;
+}
+
+/*Attendance List serction  */
+.attendance {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.attendance-list {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+/*________start___table________*/
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr {
+  color: #fff;
+  background: #34af6d;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td {
+  padding: 20px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd) {
+  background: #f3f3f3;
+}
+.table tbody tr.active {
+  font-weight: bold;
+  color: #4ad489;
+}
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #4ad489;
+}
+.btn_action a {
+  margin-right: 10px;
+}
+
+.table a{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark);
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4ad489;
+  margin: auto;
+}
+.table a:hover {
+  background: #4ad489;
+  color: #fff !important;
+  transition: 0.5rem;
+}
+.table .second_btn {
+  border: 1px solid var(--secondary);
+}
+.table .second_btn:hover {
+  background: var(--secondary);
+  color: #fff;
+  transition: 0.5rem;
+}
+.Mobility{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center !;
+  margin: auto;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #34af6d;
+}
+.Mobility .number{
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 5px 20px;
+}
+.Mobility span a{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  margin: 10px;
+}
+.Mobility a{
+  width: auto;
+  margin: 0 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.Mobility a:hover{
+   color: #000000;
+   background-color: var(--secondary);
+}
+
+/*________end_table_____________*/
+
+/*___________form _login_____________*/
+.message,
+.form,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container_form {
+  width: 70%;
+  height: 600px;
+  border-radius: 10px;
+  background: white;
+  position: relative;
+  display: grid;
+  grid-template: 100%/50% 50%;
+  box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.2);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.message {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: translateX(100%);
+  border-radius: 10px;
+  z-index: 4;
+}
+.message:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70%;
+  background: #c3c3d8;
+  opacity: 0;
+  left: 0;
+  top: 15%;
+}
+.message .button {
+  margin: 5px 0;
+}
+
+.signup:before {
+  opacity: 0.3;
+  left: 0;
+}
+
+.login:before {
+  opacity: 0.3;
+  left: 100%;
+}
+
+.btn-wrapper {
+  width: 60%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+.form--heading {
+  font-size: 2rem;
+  font-weight: 600;
+  height: 50px;
+  color: #129D72;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.form--signup {
+  border-right: 1px solid #999;
+}
+
+form {
+  width: 70%;
+}
+form > * {
+  margin: 10px;
+}
+form input {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ff5555;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.11em;
+}
+form input::placeholder {
+  color: #333;
+  font-size: 0.7rem;
+}
+form input:focus {
+  outline: 0;
+  border-bottom: 1px solid rgba(128, 155, 206, 0.7);
+  transition: 0.6s all ease;
+}
+
+.container .button {
+  width: 100%;
+  height: auto;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  background: #129D72;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  margin: 20px;
+  transition: 0.3s;
+}
+.container .button:hover{
+  background-color: var(--secondary);
+}
+table .fas{
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+/*___________form _login_____________*/
+
+/*______start_الرساله_popup___*/
+.container_popup{
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #3333337e;
+  display: -moz-grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+  margin: auto;
+  z-index: 999999;
+}
+.Popup_card{
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  display: -moz-grid;
+  align-items:center ;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 1px 1px 25px var(--light);
+  background: url(../images/background-P-M-D.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 50px;
+}
+.Popup_card .Iecon .fac{
+  font-size: 4rem !important;
+  color: var(--secondary);
+}
+.Popup_card .Name_Error{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 20px;
+}
+.Popup_card .suggestion P{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 20px;
+}
+.Popup_card .close{
+  position: relative;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 60%;
+  margin: auto;
+  margin-top: 8vh;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light);
+  background-color: var(--dark);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.Popup_card .close:hover{
+  background-color: var(--secondary);
+}
+/*______end_الرساله_popup___*/
